@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .hero-section {
     height: 100vh;
     display: flex;
@@ -12,6 +16,11 @@
     border-width: 3px;
     border-color: #070606;
     padding: 10px;
+}
+
+.info-header h2 {
+    font-weight: 800;
+    font-size: 30px;
 }
 
 .info {
