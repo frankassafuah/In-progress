@@ -50,6 +50,7 @@ body {
     border: none;
     color: white;
     width: 20%;
+    cursor: pointer;
 }
 
 .time-wrap {
