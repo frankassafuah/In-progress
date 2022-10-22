@@ -19,7 +19,7 @@ body {
 }
 
 .info-header h2 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 30px;
 }
 
@@ -40,8 +40,17 @@ body {
     width: 50%;
 }
 
-::placeholder {
+.info input::placeholder {
     color: white;
+}
+
+.info input:focus {
+    background-color: aliceblue;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.info input:focus::placeholder {
+    color: #070606;
 }
 
 .info button {
@@ -60,4 +69,18 @@ body {
 .time-wrap div {
     margin-right: 10px;
     text-align: center;
+}
+
+@media(max-width: 631px) {
+    .info-header h2 {
+        text-align: center;
+    }
+    .info input {
+        width: 80%;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+    .info button {
+        min-width: 30%;
+    }
 }
