@@ -27,12 +27,16 @@ body {
     text-align: center;
 }
 
+.info form {
+    display: inline;
+}
+
 .info p {
     line-height: 1.6;
     margin-bottom: 40px;
 }
 
-.info input {
+.info form input {
     padding: 15px;
     border: none;
     background-color: rgb(175, 175, 175);
@@ -40,20 +44,20 @@ body {
     width: 50%;
 }
 
-.info input::placeholder {
+.info form input::placeholder {
     color: white;
 }
 
-.info input:focus {
+.info form input:focus {
     background-color: aliceblue;
     border: 1px solid rgb(175, 175, 175);
 }
 
-.info input:focus::placeholder {
+.info form input:focus::placeholder {
     color: #070606;
 }
 
-.info button {
+.info form button {
     padding: 15px;
     background-color: #070606;
     border: none;
@@ -76,11 +80,14 @@ body {
         text-align: center;
     }
     .info input {
-        width: 80%;
+        width: 70% !important;
         display: block;
         margin: 0 auto 10px auto;
     }
     .info button {
         min-width: 30%;
+    }
+    .info form {
+        width: 100%;
     }
 }
