@@ -50,7 +50,7 @@ body {
 }
 
 .info input:focus::placeholder {
-    color: rgb(175, 175, 175);
+    color: #070606;
 }
 
 .info button {
