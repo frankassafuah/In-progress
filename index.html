@@ -46,7 +46,29 @@
         </div> -->
 
     </section>
-    <script src="/script.js"></script>
+    <!-- <script src="/script.js"></script> -->
+    <script>
+        function resolveafter10() {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve('resolved')
+                }, 1000)
+            })
+        }
+
+        async function getdata() {
+
+            const data = await resolveafter10();
+
+            console.log(data)
+        }
+
+        getdata()
+    </script>
+</body>
+
+</html>
+</script>
 </body>
 
 </html>
